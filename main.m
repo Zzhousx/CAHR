@@ -1,20 +1,9 @@
 clc;
 clear;
 warning off;
-addpath('./datasets');
 addpath(genpath('.'));
 
-% load('yale_mtv.mat');v = 3;n = 165;c = 15;param.dd = [4096,3304,6750];gt=im2double(gt);Y=gt; for i=1:v X{i}=X{i}'; end
-% load('M_3Sources.mat');v = 3;n = 169;param.dd = [3560,3631,3068];c = 6;  Y=truelabel{1}; for i=1:v X{i}=data{i}'; end
-% load('Caltech101-7.mat');data = 'Caltech101-7';v = size(X,2);n = size(Y,1);param.dd = [48,40,254,1984,512,928];c = 7;
 load('MSRC_V1_5views.mat');v = size(X,2);n=210;param.dd = [1302,48,512,256,210];c = 7;
-% load('Washington.mat');n = 230;c = 10;param.dd = [1];v = size(X,2);
-% load('ORL_mtv.mat');v = 3;n = 400;param.dd = [4096,3304,6750];c = 40;Y=gt;for i=1:v X{i}=X{i}'; end
-% load('HW2sources.mat');v = 2;n = 2000;c = 10;param.dd = [1];Y=truelabel{1}; for i=1:v X{i}=data{i}'; end
-% load('20newsgroups.mat');n = 500;c = 5;param.dd = [1];v=3; for i=1:v X{i}=data{i}'; end;Y=truelabel{1};
-% load('Coil20.mat');v = 3;n = 1440;param.dd = [944,324,512];c = 20;Y=label; for i=1:v X{i}=data{i}'; end
-% load('Caltech101-all.mat');data = 'Caltech101-all'; v = size(X,2);n = size(Y,1);param.dd = [48,40,254,1984,512,928];c = 102;
-
 rng('default');
 
 
